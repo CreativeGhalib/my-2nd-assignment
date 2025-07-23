@@ -1,8 +1,8 @@
 *{
     box-sizing: border-box;
     padding: 0;
-    margin:0
-    ba
+    margin:0;
+    
 }
 :root {
 
@@ -13,6 +13,7 @@
     --seconday:#000;
     --text-dark:rgba(37, 36, 50, 1);
     --text-light:rgba(137, 135, 161, 1);
+    --text-p:rgba(0, 0, 0, 0.50);
     --background-color:rgb(245, 248, 255);
 
 }
@@ -32,6 +33,7 @@
 }
 
 /* shared style */
+body {background: rgb(245, 248, 255);}
 .container {
     max-width:1140px;
     margin: auto;
@@ -39,23 +41,28 @@
 
 /* Header- Nav styling */
 .logo {
-  height: 4.375rem;
-  margin-right: 1.125rem;
+ width: 135px;
+height: 82px;
+flex-shrink: 0;
+aspect-ratio: 135/82;
 }
 .header {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+  
 }
 .nav-links {
     display: flex;
     font-family: Inter;
     font-size: 1rem;
+    gap: 3rem
  
 } 
 .nav-item {
     list-style: none;
-    margin-right: 3rem;
+    margin-right: 0;
 }
 .nav-link {
     text-decoration: none;
@@ -71,5 +78,25 @@
 
 /* banner part */
 .banner {
+    display: flex;
+    align-items: center
     
+}
+.banner h2 {
+    font-size: 65px;
+    font-family: "Noto Serif";
+}
+.banner p {
+    font-family: var(--font-title);
+    color: var(--text-p);
+    font-size: 22px;
+    font-weight: 400;
+    margin: 13px 0;
+    
+}
+.banner-right img{
+   max-width: 570px;
+max-height: 355px;
+
+ 
 }
