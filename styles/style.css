@@ -106,3 +106,36 @@ h2 span {
 .banner-right {
     display: block;
 }
+
+.plants-section {
+    text-align: center;
+    padding-top: 7.5rem;
+    padding-bottom: 1rem;
+    /* background: #f5f8ff; */
+}
+
+.plants-heading {
+    font-family: var(--font--main);
+    font-size: 3.125rem; /* 50px */
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+}
+
+.span-our {
+    color: var(--primary);
+}
+
+.plants {
+    color: var(--seconday);
+}
+
+.plants-section p {
+    width: 55.5rem;
+    max-width: 95vw;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    font-size: 1.375rem;
+    font-weight: 400;
+    color: var(--text-p);
+    line-height: 1.4;
+}
