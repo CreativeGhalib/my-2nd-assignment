@@ -171,7 +171,6 @@ h2 span {
 .product-name,
 .product-price {
     text-align: center;
-    text-edge: cap;
     font-family: Inter;
     font-size: 1.375rem;
     font-weight: 500;
