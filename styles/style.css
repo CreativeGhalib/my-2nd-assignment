@@ -139,3 +139,11 @@ h2 span {
     color: var(--text-p);
     line-height: 1.4;
 }
+/* products */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    1.25rem;
+    padding: 2.5rem 0;
+}
