@@ -2,24 +2,35 @@
     box-sizing: border-box;
     padding: 0;
     margin:0
+    ba
+}
+:root {
+
+    --border-radius: 18px;
+    --font--main:"Noto Serif", serif;
+    --font-title:"Inter", sans-serif;
+    --primary:rgba(233, 90, 8, 1);
+    --seconday:#000;
+    --text-dark:rgba(37, 36, 50, 1);
+    --text-light:rgba(137, 135, 161, 1);
+    --background-color:rgb(245, 248, 255);
+
 }
 
-/* google font: noto serif & inter */
+/* google font: Noto serif & inter */
 
 .noto-serif-font {
   font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;;
+  font-optical-sizing: auto;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
 }
 
 
 .inter-font {
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
 }
+
 /* shared style */
 .container {
     max-width:1140px;
@@ -39,6 +50,7 @@
 .nav-links {
     display: flex;
     font-family: Inter;
+    font-size: 1rem;
  
 } 
 .nav-item {
@@ -48,11 +60,16 @@
 .nav-link {
     text-decoration: none;
     font-weight: 700;
-    color: rgba(37, 36, 50, 1);
-    font-size: 1rem;
+    color: var(--text-dark);
+    
 }
 .custom-link{
     font-weight: 400;
-    color: rgba(137, 135, 161, 1);
+    color: var(--text-light);
 
+}
+
+/* banner part */
+.banner {
+    
 }
