@@ -40,34 +40,36 @@ body {background: rgb(245, 248, 255);}
 }
 
 /* Header- Nav styling */
-.logo {
- width: 135px;
-height: 82px;
-flex-shrink: 0;
-aspect-ratio: 135/82;
-}
+
 .header {
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
+    padding-top: 1.875rem ;
+  }
+.logo {
+    width: 135px;
+    height: 82px;
+    flex-shrink: 0;
+    aspect-ratio: 135/82;
 }
 .nav-links {
     display: flex;
     font-family: Inter;
     font-size: 1rem;
-    gap: 3rem
+    gap: 3rem;
  
 } 
 .nav-item {
     list-style: none;
-    margin-right: 0;
+    
 }
 .nav-link {
     text-decoration: none;
     font-weight: 700;
     color: var(--text-dark);
+    
     
 }
 .custom-link{
@@ -75,28 +77,30 @@ aspect-ratio: 135/82;
     color: var(--text-light);
 
 }
+h2 span {
+    color: var(--primary);
+}
 
 /* banner part */
 .banner {
     display: flex;
-    align-items: center
+    justify-content: center;
+    padding-top:13.8125rem ;
     
 }
 .banner h2 {
-    font-size: 65px;
+    font-size: 4.06rem;
     font-family: "Noto Serif";
 }
 .banner p {
     font-family: var(--font-title);
     color: var(--text-p);
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 400;
-    margin: 13px 0;
+    margin: 0.8125rem 0;
     
 }
-.banner-right img{
-   max-width: 570px;
-max-height: 355px;
+.banner-right {
 
  
 }
