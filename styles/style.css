@@ -1,6 +1,10 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0
+}
 
-
-
+/* google font: noto serif & inter */
 
 .noto-serif-font {
   font-family: "Noto Serif", serif;
