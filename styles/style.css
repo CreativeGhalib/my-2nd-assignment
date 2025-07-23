@@ -22,3 +22,13 @@
   font-weight: <weight>;
   font-style: normal;
 }
+
+/* nav styling */
+.logo {
+  height: 4.375rem;
+  margin-right: 1.125rem;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
