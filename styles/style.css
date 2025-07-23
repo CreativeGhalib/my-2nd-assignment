@@ -49,10 +49,8 @@ body {background: rgb(245, 248, 255);}
     padding-top: 1.875rem ;
   }
 .logo {
-    width: 135px;
-    height: 82px;
-    flex-shrink: 0;
-    aspect-ratio: 135/82;
+    width: 8.437rem;
+    height: 5.125rem;
 }
 .nav-links {
     display: flex;
@@ -85,22 +83,26 @@ h2 span {
 .banner {
     display: flex;
     justify-content: center;
-    padding-top:13.8125rem ;
+    align-items: flex-end;
+    padding-top:12rem ;
     
 }
 .banner h2 {
     font-size: 4.06rem;
-    font-family: "Noto Serif";
+    font-family: var(--font--main);
+    margin-bottom: 
 }
 .banner p {
     font-family: var(--font-title);
     color: var(--text-p);
     font-size: 1.375rem;
-    font-weight: 400;
-    margin: 0.8125rem 0;
+    font-weight: 400;   
+}
+
+.banner-left{
     
+
 }
 .banner-right {
-
- 
+    display: block;
 }
