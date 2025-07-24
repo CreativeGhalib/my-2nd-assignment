@@ -48,7 +48,7 @@ body {background: rgb(245, 248, 255);}
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1.875rem ;
+    /* padding-top: 1.875rem ; */
   }
 .logo {
     width: 8.437rem;
@@ -93,13 +93,14 @@ h2 span {
 .banner h2 {
     font-size: 4.06rem;
     font-family: var(--font--main);
-    margin-bottom: 
+    text-align: start;
 }
 .banner p {
     font-family: var(--font-title);
     color: var(--text-p);
     font-size: 1.375rem;
-    font-weight: 400;   
+    font-weight: 400;
+    text-align: start;   
 }
 
 .banner-left{
@@ -384,6 +385,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 1440px;
+height: 533px;
+margin: auto;
 }
 
 .hero-overlay {
@@ -444,10 +448,11 @@ body {
   width: 100%;
   padding: 36px 0 24px 0;
   box-sizing: border-box;
+  
 }
 
 .footer-content {
-  max-width: 900px;
+  max-width: 1120px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -536,5 +541,6 @@ body {
   }
   .footer-social {
     margin-left: 0;
+
   }
 }
