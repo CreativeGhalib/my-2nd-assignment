@@ -255,3 +255,31 @@ width: 100%;
 .flower-list {
     padding: 01.75rem;
 }
+.headline {
+    display: flex;
+    justify-content: center;
+    margin-top: 8.355rem;
+    
+}
+
+ .deals{
+    text-align: center;
+}
+.deals h1{
+    margin-bottom: 16px;
+}
+.deals h1 span{
+    color:rgb(233, 90, 8);
+}
+.heading {
+    font-size: 3.125rem;
+    font-weight: bold;
+    margin-top: 8.355rem;
+
+}
+.paragraph {
+    font-size: 1.375rem;
+    font-weight: 400;
+    color: var(--text-p);
+    font-weight: 700;
+}
