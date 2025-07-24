@@ -278,8 +278,25 @@ width: 100%;
 
 }
 .paragraph {
+    font-family: var(--text-p) ;
     font-size: 1.375rem;
     font-weight: 400;
     color: var(--text-p);
-    font-weight: 700;
+    margin-bottom: 7.225rem;
+
+}
+.latest-deal {
+    display: flex;
+}
+
+.latest-deal img {
+    border-radius: 10px;
+}
+.deals-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-right: 20px;
+    
 }
