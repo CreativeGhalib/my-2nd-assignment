@@ -36,7 +36,12 @@
 }
 
 /* shared style */
-body {background: rgb(245, 248, 255);}
+body {
+    background: var(--background-color);
+    font-family: var(--font-title);
+    margin: 0;
+}
+
 .container {
     max-width:1140px;
     margin: auto;
@@ -46,7 +51,6 @@ body {background: rgb(245, 248, 255);}
 /* Header- Nav styling */
 
 .header {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,7 +60,6 @@ body {background: rgb(245, 248, 255);}
 .logo {
     width: 8.437rem;
     height: 5.125rem;
-    width: 100%;
 }
 .nav-links {
     display: flex;
@@ -89,9 +92,11 @@ h2 span {
 
 .banner {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-end;
     width: 100%;
+    gap: 2rem;
+    margin-top: 2.5rem;
     
 }
 .banner h2 {
@@ -99,6 +104,7 @@ h2 span {
     font-family: var(--font--main);
     text-align: start;
     width:100% ;
+    font-weight: 700;
 }
 .banner p {
     font-family: var(--font-title);
@@ -106,14 +112,13 @@ h2 span {
     font-size: 1.375rem;
     font-weight: 400;
     text-align: start;   
+    margin-top: 1.25rem; 
 }
+   
 
-.banner-left{
-    
-
-}
-.banner-right {
-    display: block;
+.banner-right img{
+  height: auto;
+  display: block;
 }
 
 .plants-section {
@@ -124,7 +129,7 @@ h2 span {
 
 .plants-heading {
     font-family: var(--font--main);
-    font-size: 3.125rem; /* 50px */
+    font-size: 3.125rem; 
     font-weight: 700;
     margin-bottom: 0.7rem;
 }
@@ -145,6 +150,8 @@ h2 span {
     font-weight: 400;
     color: var(--text-p);
     margin-bottom: -6rem;
+    width: 100%;
+
 }
 
 
@@ -154,13 +161,15 @@ h2 span {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.25rem;
+    width: 100%;
+
 }
 
 .add-cart-btn {
     display: flex;
     height: 3.125rem;
     width: 100%;
-    padding: 26px 50px;
+    padding: 1.6rem 3.12rem;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -177,10 +186,9 @@ h2 span {
 .product-name,
 .product-price {
     text-align: center;
-    font-family: Inter;
+    font-family: var(--font-title)
     font-size: 1.375rem;
     font-weight: 500;
-    /* margin: 1.875rem 0; */
 }
 .product-name{
     margin-top: 1.9rem;
@@ -214,6 +222,7 @@ h2 span {
     align-items: center;
     gap: 4.375rem;
     margin-top: 12.5rem;
+    width: 100%;
 }
 
 .flower-text {
@@ -229,10 +238,10 @@ h2 span {
     font-size: 1.375rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 .flower-description {
-    color: rgba(0, 0, 0, 0.50);  
+    color: rgba(--text-p);  
     font-family: var(--font-title);
     font-size: 1.375rem;
     font-weight: 400;
@@ -247,7 +256,7 @@ h2 span {
 .flower-store {
     max-width: 540px;
     width: 100%;
-    height: 37.31rem;
+    height: auto;
     width: 100%;
 
 }
@@ -530,8 +539,8 @@ body {
     0% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(360deg);
     }
 }
+
