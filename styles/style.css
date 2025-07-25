@@ -544,3 +544,238 @@ body {
     }
 }
 
+
+/* Responsive: stack columns on small screens */
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+  /* Example mobile styles – adjust or expand as needed for your design */
+
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    min-height: 5rem;
+    position: relative;
+  }
+
+  .nav-links .nav-item:nth-child(1),
+  .nav-links .nav-item:nth-child(2),
+  .nav-links .nav-item:nth-child(3) {
+    display: none;
+  }
+
+  .header > figure,
+  .header > nav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  .header > figure { justify-content: flex-start; }
+  .header > nav { justify-content: flex-end; }
+
+  .banner {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    width: 100%;
+    gap: 0;
+  }
+
+  .banner-left {
+    width: 100%;
+    text-align: start;
+    margin-bottom: 1rem;
+  }
+
+  .banner h2 {
+    font-size: 1.4rem;
+    font-family: var(--font--main);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    text-align: start;
+  }
+
+  .banner h2 span {
+    color: var(--primary);
+    font-weight: 700;
+  }
+
+  .banner p {
+    font-size: 1rem;
+    font-family: var(--font-title);
+    color: var(--text-p);
+    font-weight: 400;
+    line-height: 1.35;
+    margin-bottom: 0.3rem;
+    text-align: start;
+    width: 100%;
+  }
+
+  .banner-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 1.2rem;
+    margin-top: -8rem;
+  }
+
+  .banner-right img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .plants-section {
+    margin-top: -10px;
+    padding-bottom: 0.5rem;
+    border-radius: var(--border-radius);
+    width: 100%;
+    margin-bottom: -100px;
+  }
+
+  .plants-heading {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0%;
+  }
+
+  .plants-section p {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    display: inline;
+    padding: 25px;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .product-card {
+    background: transparent;
+    padding: 0 0 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-img {
+    width: 171px;
+    height: 196.5px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+    margin-top: 0.2rem;
+  }
+
+  .product-name {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0.2rem;
+    text-align: center;
+    color: var(--seconday);
+    font-family: var(--font-title);
+  }
+
+  .product-price {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--seconday);
+    font-family: var(--font-title);
+  }
+
+.add-cart-btn {
+    width: calc(100% - 1rem);
+    margin-left: 05px;
+    margin-right: 5px;
+    display: block;
+}
+
+  .flower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flower-img-con img {
+    margin-top: -160px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .flower-description {
+    font-family: var(--font-title);
+    font-size: 14px !important;
+    font-weight: 400;
+    text-align: left;
+    max-width: 280px;
+  }
+
+  .head-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 33px;
+    text-align: center;
+    max-width: 361px;
+  }
+
+  .flower-text {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 0.3rem;
+  }
+
+  .latest-deal-card-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    align-items: center;
+    width: 100%;
+  }
+
+  .latest-deal-card {
+    width: 90% !important;
+    min-width: 0 !important;
+  }
+
+  #latest-card-1,
+  #latest-card-2,
+  #latest-card-3 {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+
+  .latest-deal-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    font-family: var(--font-title);
+    color: var(--text-light) !important;
+  }
+
+  .title-primary {
+    font-family: var(--font--main);
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .trusted-badge {
+    display: none !important;
+  }
+    html, body {
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+}
