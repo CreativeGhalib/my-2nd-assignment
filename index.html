@@ -11,6 +11,15 @@
         rel="stylesheet">
     <!-- Font Awesome for icons -->
     <!-- Changed to official latest stable version (6.5.1 as example) -->
+     <script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.add-cart-btn').forEach(function(btn){
+    btn.addEventListener('click', function() {
+      alert('Flower Added to Cart');
+    });
+  });
+});
+</script>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-y8b+FSDJ0l+o4yI6uQ9u2e6+8J0A5fQk3wD5uH7pP1cP0v1bIb0Y9lRr2J9k7eD6sFc5/bQ8drF7r6a8k5Q9hRg=="
